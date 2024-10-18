@@ -1,139 +1,138 @@
 @keyframes circleMove {
-    0% {
-        top: 300px;
-        left: 500px;
-        opacity: 10%;
-    }
+  0% {
+    top: 300px;
+    left: 500px;
+    opacity: 10%;
+  }
 
-    50% {
-        top: 100px;
-        left: 700px;
-        opacity: 15%;
-    }
+  50% {
+    top: 100px;
+    left: 700px;
+    opacity: 15%;
+  }
 
-    80% {
-        top: 0px;
-        left: 0px;
-    }
+  80% {
+    top: 0px;
+    left: 0px;
+  }
 
-    100% {
-        top: 300px;
-        left: 500px;
-        opacity: 10%;
-    }
+  100% {
+    top: 300px;
+    left: 500px;
+    opacity: 10%;
+  }
 }
 
 @keyframes circleMove_2 {
-    0% {
-        right: 300px;
-        bottom: 500px;
-        opacity: 15%;
-    }
+  0% {
+    right: 300px;
+    bottom: 500px;
+    opacity: 15%;
+  }
 
-    50% {
-        right: 100px;
-        bottom: 900px;
-    }
+  50% {
+    right: 100px;
+    bottom: 900px;
+  }
 
-    80% {
-        right: 0px;
-        bottom: 0px;
-        opacity: 25%;
-    }
+  80% {
+    right: 0px;
+    bottom: 0px;
+    opacity: 25%;
+  }
 
-    100% {
-        right: 300px;
-        bottom: 500px;
-        opacity: 15%;
-    }
+  100% {
+    right: 300px;
+    bottom: 500px;
+    opacity: 15%;
+  }
 }
 
 @keyframes circleMove_3 {
-    0% {
-        right: 0px;
-        bottom: 100px;
-        opacity: 10%;
-    }
+  0% {
+    right: 0px;
+    bottom: 100px;
+    opacity: 10%;
+  }
 
-    25% {
-        right: 200px;
-        bottom: 300px;
-    }
+  25% {
+    right: 200px;
+    bottom: 300px;
+  }
 
-    50% {
-        right: 500px;
-        bottom: 100px;
-        opacity: 20%;
-    }
+  50% {
+    right: 500px;
+    bottom: 100px;
+    opacity: 20%;
+  }
 
-    80% {
-        right: 1000px;
-        bottom: 10px;
-    }
+  80% {
+    right: 1000px;
+    bottom: 10px;
+  }
 
-    100% {
-        right: 0px;
-        bottom: 100px;
-        opacity: 10%;
-    }
+  100% {
+    right: 0px;
+    bottom: 100px;
+    opacity: 10%;
+  }
 }
 
 @keyframes circleMove_4 {
-    0% {
-        right: 0px;
-        bottom: 100px;
-        opacity: 15%;
-    }
+  0% {
+    right: 0px;
+    bottom: 100px;
+    opacity: 15%;
+  }
 
-    25% {
-        right: 200px;
-        bottom: 300px;
-    }
+  25% {
+    right: 200px;
+    bottom: 300px;
+  }
 
-    50% {
-        right: 500px;
-        bottom: 100px;
-        opacity: 25%;
-    }
+  50% {
+    right: 500px;
+    bottom: 100px;
+    opacity: 25%;
+  }
 
-    80% {
-        right: 1000px;
-        bottom: 10px;
-    }
+  80% {
+    right: 1000px;
+    bottom: 10px;
+  }
 
-    100% {
-        right: 0px;
-        bottom: 100px;
-        opacity: 15%;
-    }
+  100% {
+    right: 0px;
+    bottom: 100px;
+    opacity: 15%;
+  }
 }
 
 .circleAnimation {
-    user-select: none;
-    pointer-events: none;
-    z-index: 0;
-    position: fixed;
-    animation: circleMove 40s infinite ease;
+  user-select: none;
+  pointer-events: none;
+  z-index: 0;
+  position: fixed;
+  animation: circleMove 40s infinite ease;
 }
 
 .circleAnimation_2 {
-    user-select: none;
-    pointer-events: none;
-    position: fixed;
-    animation: circleMove_2 50s infinite ease;
+  user-select: none;
+  pointer-events: none;
+  position: fixed;
+  animation: circleMove_2 50s infinite ease;
 }
 
 .circleAnimation_3 {
-    user-select: none;
-    pointer-events: none;
-    position: fixed;
-    animation: circleMove_3 60s infinite ease;
+  user-select: none;
+  pointer-events: none;
+  position: fixed;
+  animation: circleMove_3 60s infinite ease;
 }
 
-
 .circleAnimation_4 {
-    user-select: none;
-    pointer-events: none;
-    position: fixed;
-    animation: circleMove_4 40s infinite ease;
+  user-select: none;
+  pointer-events: none;
+  position: fixed;
+  animation: circleMove_4 40s infinite ease;
 }

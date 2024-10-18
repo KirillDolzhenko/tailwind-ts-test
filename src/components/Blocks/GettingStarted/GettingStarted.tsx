@@ -8,12 +8,12 @@ import IconBlock from "../../Elements/IconBlock/IconBlock";
 export default function () {
   return (
     <div className="mb-[30px]">
-      <h3 className="text-5xl text-center">Getting Started</h3>
-      <p className="text-2xl text-[#E2E2E2] text-center mt-[20px] mb-[30px]">
+      <h3 className="text-center text-5xl">Getting Started</h3>
+      <p className="mb-[30px] mt-[20px] text-center text-2xl text-[#E2E2E2]">
         Eu, molestie commodo, enim pellentesque turpis integer sagittis
       </p>
 
-      <ul className="group flex gap-5 flex-grow-1 flex-auto flex-wrap justify-center md:flex-nowrap md:flex-row md:justify-between relative">
+      <ul className="flex-grow-1 group relative flex flex-auto flex-wrap justify-center gap-5 md:flex-row md:flex-nowrap md:justify-between">
         <IconBlock Icon={GoShieldCheck}>Connect your wallet</IconBlock>
         <IconBlock Icon={BsFolder2}>
           Posuere urna, sit amet molestie leo
@@ -24,8 +24,8 @@ export default function () {
         <IconBlock Icon={IoRocketOutline}>
           Lectus volutpat magna vitae in arcu
         </IconBlock>
-        <div className="block w-[100%] h-[20px] absolute top-[30%] blur-[70px] bg-gradient-to-r from-[#9B51E0] to-[#3081ED]"></div>
-        <div className="transition duration-200 group-hover:blur-[70px] block w-[100%] h-[20px] absolute top-[30%] blur-[100px] bg-gradient-to-r from-[#9B51E0] to-[#3081ED]"></div>
+        <div className="absolute top-[30%] block h-[20px] w-[100%] bg-gradient-to-r from-[#9B51E0] to-[#3081ED] blur-[70px]"></div>
+        <div className="absolute top-[30%] block h-[20px] w-[100%] bg-gradient-to-r from-[#9B51E0] to-[#3081ED] blur-[100px] transition duration-200 group-hover:blur-[70px]"></div>
       </ul>
     </div>
   );

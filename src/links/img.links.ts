@@ -16,6 +16,9 @@ import nft10 from "/img/nft/nft10.jpg";
 import nft11 from "/img/nft/nft11.jpg";
 import nft12 from "/img/nft/nft12.jpg";
 
+import faviconNft from "/favicons/nft.svg";
+import faviconNft2 from "/favicons/nft2.svg";
+
 import rectBg from "/img/rect.png";
 
 export let imgProfilePlaceholder = ImageProfile_1;
@@ -27,4 +30,20 @@ export let imgRectBg = rectBg;
 
 export let imgNFT1 = nft1;
 
-export let imgNFTs = [nft1, nft2, nft3, nft4, nft5, nft6, nft7, nft8, nft9, nft10, nft11, nft12]
+export let imgNFTs = [
+  nft1,
+  nft2,
+  nft3,
+  nft4,
+  nft5,
+  nft6,
+  nft7,
+  nft8,
+  nft9,
+  nft10,
+  nft11,
+  nft12,
+];
+
+export let faviconNftLogo = faviconNft; 
+export let faviconNft2Logo = faviconNft2; 

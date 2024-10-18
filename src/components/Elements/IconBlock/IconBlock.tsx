@@ -8,13 +8,13 @@ let defaultStyles =
 export default function ({ children, Icon, className }: IPropsIconBlock) {
   return (
     <li className={classNames(defaultStyles, className)}>
-      <div className="[&>svg]:hover:text-white max-w-[150px] w-100% h-[138px] relative select-none">
+      <div className="w-100% relative h-[138px] max-w-[150px] select-none [&>svg]:hover:text-white">
         <img
-          className="absolute top-0 left-0 w-[100%] h-[100%] z-10"
+          className="absolute left-0 top-0 z-10 h-[100%] w-[100%]"
           src={imgRectBg}
           alt="rectangle-of-backround"
         />
-        <Icon className="transition duration-200 relative w-[56px] h-[56px] text-[#D7D7D7] mx-[47px] my-[40px] z-20" />
+        <Icon className="relative z-20 mx-[47px] my-[40px] h-[56px] w-[56px] text-[#D7D7D7] transition duration-200" />
       </div>
       <p className="max-w-[200px] text-center">{children}</p>
     </li>

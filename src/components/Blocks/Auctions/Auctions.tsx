@@ -6,7 +6,7 @@ export default function () {
   return (
     <section>
       <HeaderSection>Hot auctions</HeaderSection>
-      <div className="grid grid-cols-1 ssm:grid-cols-2 md:flex gap-[30px] justify-between mb-10">
+      <div className="mb-10 grid grid-cols-1 justify-between gap-[30px] md:flex ssm:grid-cols-2">
         {imgNFTs.slice(0, 4).map((el) => (
           <NFTBlock src={el} title="Something like title" price={1.5} />
         ))}

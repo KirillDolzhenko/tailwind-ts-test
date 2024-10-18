@@ -14,7 +14,7 @@ export default function ({
     case EnumSize.BIG:
       return (
         <button
-          className={`${defaultStyles} py-2 px-10 text-2 md:text-xl lg:text-2xl lg:py-3 lg:px-16 ${className}`}
+          className={`${defaultStyles} text-2 px-10 py-2 md:text-xl lg:px-16 lg:py-3 lg:text-2xl ${className}`}
           onClick={onClick}
         >
           {children}
@@ -23,7 +23,7 @@ export default function ({
     default: {
       return (
         <button
-          className={`${defaultStyles} px-[24px] py-[2px] border border-white border-solid rounded-[10px] ${className}`}
+          className={`${defaultStyles} rounded-[10px] border border-solid border-white px-[24px] py-[2px] ${className}`}
           onClick={onClick}
         >
           {children}

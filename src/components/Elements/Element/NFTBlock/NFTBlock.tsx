@@ -5,20 +5,20 @@ import GradientButton from "../../Button/GradientButton/GradientButton";
 
 export default function ({ title, price, src }: IPropsNFTBlock) {
   return (
-    <section className="transition duration-100 w-[100%] inline-flex flex-col gap-4 md:hover:scale-105 items-start">
-      <div className="w-[100%] h-0 pb-[100%] object-cover overflow-hidden rounded-[12px] relative">
+    <section className="inline-flex w-[100%] flex-col items-start gap-4 transition duration-100 md:hover:scale-105">
+      <div className="relative h-0 w-[100%] overflow-hidden rounded-[12px] object-cover pb-[100%]">
         <img
-          className="absolute top-0 left-0 w-[100%] h-[100%] object-cover"
+          className="absolute left-0 top-0 h-[100%] w-[100%] object-cover"
           src={src}
           alt="nft1"
         />
       </div>
-      <div className="font-semibold text-4 w-[100%] flex justify-between mt-2">
+      <div className="text-4 mt-2 flex w-[100%] justify-between font-semibold">
         <h6>{title}</h6>
         <span>{price} Weth</span>
       </div>
-      <div className="w-[100%] h-[1px] bg-white"></div>
-      <div className="w-[100%] flex justify-between items-center">
+      <div className="h-[1px] w-[100%] bg-white"></div>
+      <div className="flex w-[100%] items-center justify-between">
         <p className="text-4">
           Ends in <span className="text-4 text-[#D7D7D7]">01.34.54</span>
         </p>

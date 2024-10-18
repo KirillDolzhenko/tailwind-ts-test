@@ -1,23 +1,27 @@
-
-
 .borderGradient {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 
-    &::before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        inset: 0;
-        border-radius: 35px; 
-        padding: 1px; 
-        background:linear-gradient(190deg, #FB37FF, rgba(#9B6FEE, 10%), rgba(#7B7FEA, 20%), #1BB2DE); 
-        
-        -webkit-mask: 
-           linear-gradient(#fff 0 0) content-box, 
-           linear-gradient(#fff 0 0);
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    border-radius: 35px;
+    padding: 1px;
+    background: linear-gradient(
+      190deg,
+      #fb37ff,
+      rgba(#9b6fee, 10%),
+      rgba(#7b7fea, 20%),
+      #1bb2de
+    );
 
-        -webkit-mask-composite: xor;
-        mask-composite: exclude; 
-    }
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
 }

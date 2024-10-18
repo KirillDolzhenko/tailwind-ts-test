@@ -1,11 +1,11 @@
-@import "./mixins";
+@use "./mixins.scss" as mixin;
 
-@include font-link("Poppins", "Regular", 400);
-@include font-link("Poppins", "Medium", 500);
-@include font-link("Poppins", "SemiBold", 600);
-@include font-link("Poppins", "Bold", 700);
+@include mixin.font-link("Poppins", "Regular", 400);
+@include mixin.font-link("Poppins", "Medium", 500);
+@include mixin.font-link("Poppins", "SemiBold", 600);
+@include mixin.font-link("Poppins", "Bold", 700);
 
 * {
-    font-family: "Poppins";
-    font-weight: 400
+  font-family: "Poppins";
+  font-weight: 400;
 }

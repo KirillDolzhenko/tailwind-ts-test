@@ -15,28 +15,28 @@ export default function () {
 
   return (
     <header className="py-7">
-      <nav className="flex justify-between items-center uppercase">
-        <a className="text-[2rem] font-bold bg-[linear-gradient(30deg,var(--tw-gradient-stops))] from-[#9B51E0] to-[#3081ED] inline-block text-transparent bg-clip-text">
+      <nav className="flex items-center justify-between uppercase">
+        <a className="inline-block bg-[linear-gradient(30deg,var(--tw-gradient-stops))] from-[#9B51E0] to-[#3081ED] bg-clip-text text-[2rem] font-bold text-transparent">
           NFTORE
         </a>
         <div
           className={classNames(
-            `group/menu flex transition duration-200 absolute top-0 left-0 bottom-0 right-0 flex-col bg-[rgba(31,29,43,0.95)] lg:bg-transparent z-50 p-10 items-center gap-10 lg:relative gap-[15px] lg:gap-10 lg:flex`,
+            `group/menu absolute bottom-0 left-0 right-0 top-0 z-50 flex flex-col items-center gap-10 gap-[15px] bg-[rgba(31,29,43,0.95)] p-10 transition duration-200 lg:relative lg:flex lg:gap-10 lg:bg-transparent`,
             context.state
               ? "translate-x-0"
-              : "translate-x-full lg:translate-x-0"
+              : "translate-x-full lg:translate-x-0",
           )}
         >
           <button
-            className="lg:hidden self-end mb-[100px]"
+            className="mb-[100px] self-end lg:hidden"
             onClick={() => {
               context.setState && context.setState((active) => !active);
             }}
           >
-            <IoCloseOutline className="size-[25px] transition duration-100 text-[#D7D7D7] hover:text-white" />
+            <IoCloseOutline className="size-[25px] text-[#D7D7D7] transition duration-100 hover:text-white" />
           </button>
 
-          <ul className="flex gap-10 flex-col items-center lg:flex-row">
+          <ul className="flex flex-col items-center gap-10 lg:flex-row">
             <HeaderOption>Home</HeaderOption>
             <HeaderOption>My profile</HeaderOption>
             <HeaderOption>Activity</HeaderOption>
@@ -44,11 +44,11 @@ export default function () {
           </ul>
         </div>
 
-        <div className="flex gap-2.5 lg:gap-2 flex-col ssm:flex-row">
-          <button className="py-1 px-3 text-[0.825rem] ssm:py-3 ssm:px-5 lg:px-9 transition ease-in-out duration-300 hover:text-white hover:border-white border border-transparent border-solid  rounded-[10px] text-[#BCBCBC] uppercase font-medium">
+        <div className="flex flex-col gap-2.5 lg:gap-2 ssm:flex-row">
+          <button className="rounded-[10px] border border-solid border-transparent px-3 py-1 text-[0.825rem] font-medium uppercase text-[#BCBCBC] transition duration-300 ease-in-out hover:border-white hover:text-white lg:px-9 ssm:px-5 ssm:py-3">
             Create
           </button>
-          <button className="py-1 px-3 text-[0.825rem] ssm:py-3 ssm:px-5 lg:px-9 transition ease-in-out duration-300 hover:text-white hover:border-white border border-transparent border-solid rounded-[10px] text-[#BCBCBC] uppercase font-medium">
+          <button className="rounded-[10px] border border-solid border-transparent px-3 py-1 text-[0.825rem] font-medium uppercase text-[#BCBCBC] transition duration-300 ease-in-out hover:border-white hover:text-white lg:px-9 ssm:px-5 ssm:py-3">
             Sign In
           </button>
         </div>
@@ -61,7 +61,7 @@ export default function () {
             // console.log("Click");
           }}
         >
-          <RxHamburgerMenu className="size-[25px] transition duration-100 text-[#D7D7D7] hover:text-white" />
+          <RxHamburgerMenu className="size-[25px] text-[#D7D7D7] transition duration-100 hover:text-white" />
         </button>
       </nav>
     </header>

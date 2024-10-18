@@ -20,7 +20,7 @@ export default function () {
     <div className={classNames(defaultClasses, context.state && "menuActive")}>
       <ContainerMain className="relative z-50">
         <div className="flex flex-col gap-[80px] md:gap-[160px]">
-          <section className="lg:min-h-[100vh] mb-[100px] md:mb-0">
+          <section className="mb-[100px] md:mb-0 lg:min-h-[100vh]">
             <Header />
             <PreviewLanding />
           </section>
@@ -38,10 +38,10 @@ export default function () {
           </section>
         </div>
       </ContainerMain>
-      <div className="w-[200px] h-[200px] rounded-full bg-[#9B51E0] blur-[80px] circleAnimation"></div>
-      <div className="w-[100px] h-[100px] rounded-full bg-[#ffffff] blur-[100px] circleAnimation_2"></div>
-      <div className="w-[200px] h-[200px] rounded-full bg-[#3081ED] blur-[100px] circleAnimation_3"></div>
-      <div className="w-[300px] h-[300px] rounded-full bg-[#ffffff] blur-[100px] circleAnimation_4"></div>
+      <div className="circleAnimation h-[200px] w-[200px] rounded-full bg-[#9B51E0] blur-[80px]"></div>
+      <div className="circleAnimation_2 h-[100px] w-[100px] rounded-full bg-[#ffffff] blur-[100px]"></div>
+      <div className="circleAnimation_3 h-[200px] w-[200px] rounded-full bg-[#3081ED] blur-[100px]"></div>
+      <div className="circleAnimation_4 h-[300px] w-[300px] rounded-full bg-[#ffffff] blur-[100px]"></div>
     </div>
   );
 }
