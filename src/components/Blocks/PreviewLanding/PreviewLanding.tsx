@@ -44,7 +44,7 @@ export default function PreviewLanding() {
             <h4 className="font-semibold">WE ARE HERE</h4>
             <button
               onClick={() => {
-                setLike(++like);
+                setLike(like + 1);
               }}
               className="flex justify-start gap-2 md:justify-end [&>span]:hover:text-[#9B51E0] [&>svg]:hover:fill-[#9B51E0] [&>svg]:hover:[filter:_drop-shadow(0px_0px_3px_#9B51E0)]"
             >
