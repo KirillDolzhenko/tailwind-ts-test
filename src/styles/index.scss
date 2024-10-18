@@ -1,11 +1,10 @@
-@use "./null.scss";
-@use "./fonts.scss";
-@use "./circleAnimation.scss";
+@use './null.scss';
+@use './fonts.scss';
+@use './circleAnimation.scss';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 // selection:bg-[#9B51E0] selection:text-[#ffffff] min-h-screen bg-[#1F1D2B]
 

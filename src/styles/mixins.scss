@@ -1,7 +1,7 @@
 @mixin font-link($name, $subname, $weight) {
   @font-face {
     font-family: $name;
-    src: url("/fonts/#{$name}/#{$name}-#{$subname}.ttf");
+    src: url('/fonts/#{$name}/#{$name}-#{$subname}.ttf');
     font-weight: $weight;
   }
 }

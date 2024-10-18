@@ -1,17 +1,17 @@
-import { useState } from "react";
+import { useState } from 'react';
 import {
   imgNFTLand,
   imgProfilePlaceholder,
   svgHeart,
-} from "../../../links/img.links";
-import GradientButton from "../../Elements/Button/GradientButton/GradientButton";
-import "./border.scss";
+} from '../../../links/img.links';
+import GradientButton from '../../Elements/Button/GradientButton/GradientButton';
+import './border.scss';
 
-export default function () {
-  let [like, setLike] = useState<number>(1);
+export default function PreviewLanding() {
+  const [like, setLike] = useState<number>(1);
 
   return (
-    <div className="ltr mt-44 flex flex-col items-start items-center justify-between gap-[20px] sm:flex-row sheight:mt-20">
+    <div className="ltr mt-44 flex flex-col items-center justify-between gap-[20px] sm:flex-row sheight:mt-20">
       <div className="flex flex-col gap-6">
         <h1 className="p-100 max-w-2xl items-center justify-center text-4xl font-semibold lg:text-6xl xl:text-7xl">
           Discover, collect, and charity in extraordinary NFT marketplace

@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import { EnumSize } from "./enums";
+import { ReactNode } from 'react';
+import { EnumSize } from './enums';
 
 export interface IPropsClassName {
   className?: string;
@@ -25,6 +25,6 @@ export interface IPropsNFTBlock extends IPropsClassName {
 }
 
 export interface IPropsFooterList extends IPropsClassName {
-  title: string,
-  elements: string[]
+  title: string;
+  elements: string[];
 }

@@ -1,17 +1,12 @@
-import { RxHamburgerMenu } from "react-icons/rx";
-import HeaderOption from "../../Elements/HeaderOption/HeaderOption";
-import { useContext, useEffect, useState } from "react";
-import classNames from "classnames";
-import { IoCloseOutline } from "react-icons/io5";
-import { ContextMenu } from "../../../App";
+import { RxHamburgerMenu } from 'react-icons/rx';
+import HeaderOption from '../../Elements/HeaderOption/HeaderOption';
+import { useContext } from 'react';
+import classNames from 'classnames';
+import { IoCloseOutline } from 'react-icons/io5';
+import { ContextMenu } from '../../../App';
 
-export default function () {
-  // let [menuActive, setMenuActive] = useState<boolean>(false);
-  let context = useContext(ContextMenu);
-
-  // useEffect(() => {
-  //   console.log("menu ", menuActive);
-  // }, [menuActive]);
+export default function Header() {
+  const context = useContext(ContextMenu);
 
   return (
     <header className="py-7">
@@ -23,14 +18,16 @@ export default function () {
           className={classNames(
             `group/menu absolute bottom-0 left-0 right-0 top-0 z-50 flex flex-col items-center gap-10 gap-[15px] bg-[rgba(31,29,43,0.95)] p-10 transition duration-200 lg:relative lg:flex lg:gap-10 lg:bg-transparent`,
             context.state
-              ? "translate-x-0"
-              : "translate-x-full lg:translate-x-0",
+              ? 'translate-x-0'
+              : 'translate-x-full lg:translate-x-0',
           )}
         >
           <button
             className="mb-[100px] self-end lg:hidden"
             onClick={() => {
-              context.setState && context.setState((active) => !active);
+              if (undefined !== context.setState) {
+                context.setState((active) => !active);
+              }
             }}
           >
             <IoCloseOutline className="size-[25px] text-[#D7D7D7] transition duration-100 hover:text-white" />
@@ -56,9 +53,9 @@ export default function () {
         <button
           className="lg:hidden"
           onClick={() => {
-            context.setState && context.setState((active) => !active);
-            // console.log(menuActive);
-            // console.log("Click");
+            if (context.setState) {
+              context.setState((active) => !active);
+            }
           }}
         >
           <RxHamburgerMenu className="size-[25px] text-[#D7D7D7] transition duration-100 hover:text-white" />

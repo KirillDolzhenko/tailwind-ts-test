@@ -1,7 +1,7 @@
-import { svgArrow } from "../../../../links/img.links";
-import { IPropsChildren } from "../../../../types/props.types";
+import { svgArrow } from '../../../../links/img.links';
+import { IPropsChildren } from '../../../../types/props.types';
 
-export default function ({ children }: IPropsChildren) {
+export default function HeaderSection({ children }: IPropsChildren) {
   return (
     <div className="mb-[30px] flex justify-between gap-1 align-bottom ssm:mb-[60px]">
       <h3 className="text-3xl md:text-5xl ssmAndMd:text-4xl">{children}</h3>

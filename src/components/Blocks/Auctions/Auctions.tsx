@@ -1,8 +1,8 @@
-import { imgNFTs } from "../../../links/img.links";
-import NFTBlock from "../../Elements/Element/NFTBlock/NFTBlock";
-import HeaderSection from "../../Elements/Header/HeaderSection/HeaderSection";
+import { imgNFTs } from '../../../links/img.links';
+import NFTBlock from '../../Elements/Element/NFTBlock/NFTBlock';
+import HeaderSection from '../../Elements/Header/HeaderSection/HeaderSection';
 
-export default function () {
+export default function Auctions() {
   return (
     <section>
       <HeaderSection>Hot auctions</HeaderSection>

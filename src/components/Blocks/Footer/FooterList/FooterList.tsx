@@ -1,6 +1,6 @@
-import { IPropsFooterList } from "../../../../types/props.types";
+import { IPropsFooterList } from '../../../../types/props.types';
 
-export default function ({ title, elements }: IPropsFooterList) {
+export default function FooterList({ title, elements }: IPropsFooterList) {
   return (
     <div>
       <h6 className="mb-3 text-[30px] lg:mb-5 lg:text-[40px]">{title}</h6>

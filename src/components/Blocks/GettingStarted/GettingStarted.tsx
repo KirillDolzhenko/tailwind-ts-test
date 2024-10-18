@@ -1,11 +1,10 @@
-import { GoShieldCheck } from "react-icons/go";
-import { BsFolder2 } from "react-icons/bs";
-import { CiImageOn } from "react-icons/ci";
-import { IoRocketOutline } from "react-icons/io5";
-import { imgRectBg } from "../../../links/img.links";
-import IconBlock from "../../Elements/IconBlock/IconBlock";
+import { GoShieldCheck } from 'react-icons/go';
+import { BsFolder2 } from 'react-icons/bs';
+import { CiImageOn } from 'react-icons/ci';
+import { IoRocketOutline } from 'react-icons/io5';
+import IconBlock from '../../Elements/IconBlock/IconBlock';
 
-export default function () {
+export default function GettingStarted() {
   return (
     <div className="mb-[30px]">
       <h3 className="text-center text-5xl">Getting Started</h3>

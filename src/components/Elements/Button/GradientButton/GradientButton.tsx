@@ -1,10 +1,10 @@
-import { EnumSize } from "../../../../types/enums";
-import { IPropsGradientButton } from "../../../../types/props.types";
+import { EnumSize } from '../../../../types/enums';
+import { IPropsGradientButton } from '../../../../types/props.types';
 
-let defaultStyles =
-  "transition ease-in-out duration-300 border-solid rounded-2xl border border-[#D7D7D7] hover:text-white hover:bg-gradient-to-r hover:from-[#9B51E0] hover:to-[#3081ED] hover:border-transparent";
+const defaultStyles =
+  'transition ease-in-out duration-300 border-solid rounded-2xl border border-[#D7D7D7] hover:text-white hover:bg-gradient-to-r hover:from-[#9B51E0] hover:to-[#3081ED] hover:border-transparent';
 
-export default function ({
+export default function GradientButton({
   children,
   className,
   onClick,

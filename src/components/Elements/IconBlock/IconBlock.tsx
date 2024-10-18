@@ -1,11 +1,15 @@
-import classNames from "classnames";
-import { imgRectBg } from "../../../links/img.links";
-import { IPropsChildren, IPropsIconBlock } from "../../../types/props.types";
+import classNames from 'classnames';
+import { imgRectBg } from '../../../links/img.links';
+import { IPropsIconBlock } from '../../../types/props.types';
 
-let defaultStyles =
-  "relative flex flex-col items-center gap-[20px] transition duration-200 hover:scale-110 z-10";
+const defaultStyles =
+  'relative flex flex-col items-center gap-[20px] transition duration-200 hover:scale-110 z-10';
 
-export default function ({ children, Icon, className }: IPropsIconBlock) {
+export default function IconBlock({
+  children,
+  Icon,
+  className,
+}: IPropsIconBlock) {
   return (
     <li className={classNames(defaultStyles, className)}>
       <div className="w-100% relative h-[138px] max-w-[150px] select-none [&>svg]:hover:text-white">

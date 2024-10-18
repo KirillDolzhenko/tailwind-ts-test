@@ -1,10 +1,10 @@
-import FooterList from "./FooterList/FooterList";
+import FooterList from './FooterList/FooterList';
 
-import { PiFacebookLogo } from "react-icons/pi";
-import { PiTwitterLogo } from "react-icons/pi";
-import { PiYoutubeLogo } from "react-icons/pi";
+import { PiFacebookLogo } from 'react-icons/pi';
+import { PiTwitterLogo } from 'react-icons/pi';
+import { PiYoutubeLogo } from 'react-icons/pi';
 
-export default function () {
+export default function Footer() {
   return (
     <footer>
       <div className="mb-10 flex flex-wrap justify-between gap-6 lg:flex-row lg:flex-nowrap lg:justify-between lg:gap-10 ssm:justify-center">
@@ -16,15 +16,15 @@ export default function () {
         </div>
         <FooterList
           title="Marketplace"
-          elements={["Home", "Activity", "Discover", "Learn more"]}
+          elements={['Home', 'Activity', 'Discover', 'Learn more']}
         />
         <FooterList
           title="Company"
-          elements={["About Us", "Services", "Portfolio"]}
+          elements={['About Us', 'Services', 'Portfolio']}
         />
         <FooterList
           title="Contact"
-          elements={["Facebook", "Instagram", "Twitter", "Email"]}
+          elements={['Facebook', 'Instagram', 'Twitter', 'Email']}
         />
       </div>
       <div className="h-[1px] w-[100%] bg-white"></div>

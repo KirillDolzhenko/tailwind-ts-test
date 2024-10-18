@@ -1,8 +1,8 @@
-import { createContext, useState } from "react";
-import "./App.css";
-import LandingPage from "./components/Pages/LandingPage/LandingPage";
-import { faviconNftLogo, imgNFTLand } from "./links/img.links";
-import { Helmet } from "react-helmet";
+import { createContext, useState } from 'react';
+import './App.css';
+import LandingPage from './components/Pages/LandingPage/LandingPage';
+import { faviconNftLogo } from './links/img.links';
+import { Helmet } from 'react-helmet';
 
 export interface IContextMenu {
   state: boolean;
@@ -12,7 +12,7 @@ export interface IContextMenu {
 export const ContextMenu = createContext<IContextMenu>({ state: false });
 
 function App() {
-  let [contextMenu, setContextMenu] = useState<boolean>(false);
+  const [contextMenu, setContextMenu] = useState<boolean>(false);
 
   return (
     <ContextMenu.Provider

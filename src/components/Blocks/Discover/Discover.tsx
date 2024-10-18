@@ -1,12 +1,12 @@
-import { useState } from "react";
-import { imgNFTs } from "../../../links/img.links";
-import { EnumSize } from "../../../types/enums";
-import GradientButton from "../../Elements/Button/GradientButton/GradientButton";
-import NFTBlock from "../../Elements/Element/NFTBlock/NFTBlock";
-import HeaderSection from "../../Elements/Header/HeaderSection/HeaderSection";
+import { useState } from 'react';
+import { imgNFTs } from '../../../links/img.links';
+import { EnumSize } from '../../../types/enums';
+import GradientButton from '../../Elements/Button/GradientButton/GradientButton';
+import NFTBlock from '../../Elements/Element/NFTBlock/NFTBlock';
+import HeaderSection from '../../Elements/Header/HeaderSection/HeaderSection';
 
-export default function () {
-  let [nfts, setNFTS] = useState<string[]>(imgNFTs.slice(4));
+export default function Discover() {
+  const [nfts, setNFTS] = useState<string[]>(imgNFTs.slice(4));
   return (
     <div className="flex flex-col">
       <HeaderSection>Discover</HeaderSection>
