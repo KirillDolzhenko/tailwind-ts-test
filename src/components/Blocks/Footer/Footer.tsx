@@ -46,7 +46,7 @@ export default function Footer() {
             </button>
           </li>
         </ul>
-        <p className="text-4 text-[#828282]">Copyright 2021 Gaslur</p>
+        <p className="text-4 text-[#828282]">Copyright &#169; 2021 Gaslur</p>
       </div>
     </footer>
   );
