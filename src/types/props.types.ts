@@ -1,6 +1,11 @@
 import { ReactNode } from 'react';
 import { EnumSize } from './enums';
 
+export interface IContextMenu {
+  state: boolean;
+  setState?: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
 export interface IPropsClassName {
   className?: string;
 }

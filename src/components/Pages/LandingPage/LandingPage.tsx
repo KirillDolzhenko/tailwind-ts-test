@@ -10,7 +10,7 @@ import { ContextMenu } from '../../../App';
 import classNames from 'classnames';
 
 const defaultClasses =
-  'relative selection:bg-[#9B51E0] selection:text-[#ffffff] min-h-screen bg-[#1F1D2B] text-white leading-normal overflow-hidden';
+  'relative selection:bg-[#3081ED] selection:text-[#ffffff] min-h-screen bg-[#1F1D2B] text-white leading-normal overflow-hidden';
 
 export default function LandingPage() {
   const context = useContext(ContextMenu);

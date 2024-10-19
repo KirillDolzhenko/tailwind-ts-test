@@ -1,13 +1,9 @@
 import { createContext, useState } from 'react';
 import './App.css';
 import LandingPage from './components/Pages/LandingPage/LandingPage';
-import { faviconNftLogo } from './links/img.links';
+import { faviconNft3Logo } from './links/img.links';
 import { Helmet } from 'react-helmet';
-
-export interface IContextMenu {
-  state: boolean;
-  setState?: React.Dispatch<React.SetStateAction<boolean>>;
-}
+import { IContextMenu } from './types/props.types';
 
 export const ContextMenu = createContext<IContextMenu>({ state: false });
 
@@ -21,7 +17,7 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>NFTore</title>
-        <link rel="icon" href={faviconNftLogo} />
+        <link rel="icon" href={faviconNft3Logo} />
       </Helmet>
       <LandingPage />
     </ContextMenu.Provider>

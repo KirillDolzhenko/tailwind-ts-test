@@ -11,7 +11,10 @@ export default function Header() {
   return (
     <header className="py-7">
       <nav className="flex items-center justify-between uppercase">
-        <a className="inline-block bg-[linear-gradient(30deg,var(--tw-gradient-stops))] from-[#9B51E0] to-[#3081ED] bg-clip-text text-[2rem] font-bold text-transparent">
+        <a
+          href="https://github.com/KirillDolzhenko/tailwind-ts-test"
+          className="inline-block bg-[linear-gradient(30deg,var(--tw-gradient-stops))] from-[#9B51E0] to-[#3081ED] bg-clip-text text-[2rem] font-bold text-transparent"
+        >
           NFTORE
         </a>
         <div

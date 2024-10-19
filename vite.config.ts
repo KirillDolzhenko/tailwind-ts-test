@@ -1,16 +1,17 @@
 /// <reference types="vite/client" />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
-import dotenv from "dotenv";
+import dotenv from 'dotenv';
 
 const config = dotenv.config();
 
 export default defineConfig({
+  base: config.parsed?.VITE_BASE,
   plugins: [react()],
   server: {
-    port: Number(config.parsed?.VITE_PORT_SERVER) || 4000
+    port: Number(config.parsed?.VITE_PORT_SERVER) || 4000,
   },
   preview: {
-    port: Number(config.parsed?.VITE_PORT_PREVIEW) || 5000
-  }
+    port: Number(config.parsed?.VITE_PORT_PREVIEW) || 5000,
+  },
 });

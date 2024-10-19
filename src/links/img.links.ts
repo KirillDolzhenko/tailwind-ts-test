@@ -18,6 +18,7 @@ import nft12 from '/img/nft/nft12.jpg';
 
 import faviconNft from '/favicons/nft.svg';
 import faviconNft2 from '/favicons/nft2.svg';
+import faviconNft3 from '/favicons/nft3.svg';
 
 import rectBg from '/img/rect.png';
 
@@ -47,3 +48,4 @@ export const imgNFTs = [
 
 export const faviconNftLogo = faviconNft;
 export const faviconNft2Logo = faviconNft2;
+export const faviconNft3Logo = faviconNft3;
